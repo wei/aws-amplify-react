@@ -1,0 +1,15 @@
+{
+  "template": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-weiamplifyreact-template-221858-authRole",
+      "UnauthRoleArn": "arn:aws:iam::531341216129:role/amplify-weiamplifyreact-template-221858-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::531341216129:role/amplify-weiamplifyreact-template-221858-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-weiamplifyreact-template-221858-deployment",
+      "UnauthRoleName": "amplify-weiamplifyreact-template-221858-unauthRole",
+      "StackName": "amplify-weiamplifyreact-template-221858",
+      "StackId": "arn:aws:cloudformation:us-east-2:531341216129:stack/amplify-weiamplifyreact-template-221858/7b45ad10-2303-11eb-bfd0-0ab7f0172fc4",
+      "AmplifyAppId": "d254cp7kf5doil"
+    }
+  }
+}
