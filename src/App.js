@@ -1,22 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import { DataStore } from 'aws-amplify';
+import { Todo } from './models';
 
 function App() {
+
+  const addRecord = async () => {
+    try {
+      await DataStore.save(new Todo({
+        name: 'me ' + Date.now(),
+        someField: [null],
+      }))
+      console.log('DEBUG', 'Successfully saved a record with someField: [null]')
+    } catch (err) {
+      console.warn('DEBUG', 'Failed to saved a record with someField: [null]', err)
+    }
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={addRecord}>Add Record (see console)</button>
       </header>
     </div>
   );
