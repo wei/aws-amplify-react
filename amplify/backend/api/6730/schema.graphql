@@ -1,6 +1,6 @@
 type InstanceRole
 @model
-@key(fields: ["instanceID", "entityID"])
+@key(name: "customKeyName", fields: ["instanceID", "entityID"])
 {
   instanceID: ID!
   # instance: Instance! @connection(fields: ["instanceID"])

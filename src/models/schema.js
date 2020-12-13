@@ -42,6 +42,7 @@ export const schema = {
                 {
                     "type": "key",
                     "properties": {
+                        "name": "customKeyName",
                         "fields": [
                             "instanceID",
                             "entityID"
@@ -53,5 +54,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "68ba2ed45e2abcd4fc25582872012bf6"
+    "version": "e000a4ab251bc660feddea152c8750a0"
 };
