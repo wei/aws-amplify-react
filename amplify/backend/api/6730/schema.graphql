@@ -1,0 +1,10 @@
+type InstanceRole
+@model
+@key(fields: ["instanceID", "entityID"])
+{
+  instanceID: ID!
+  # instance: Instance! @connection(fields: ["instanceID"])
+  entityID: ID!
+  # entity: Entity! @connection(fields: ["entityID"])
+  role: String!
+}
